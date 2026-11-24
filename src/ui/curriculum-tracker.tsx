@@ -18,8 +18,6 @@ function toStatus(progress: Progress, id: string): LessonStatus {
 }
 
 function lessonStatus(progress: Progress, id: string): LessonStatus {
-  const lesson = curriculum.find(item => item.id === id)
-  if (lesson?.prerequisites.some(prerequisite => toStatus(progress, prerequisite) !== 'mastered')) return 'locked'
   return toStatus(progress, id)
 }
 
@@ -47,7 +45,6 @@ export function CurriculumTracker() {
 
   function update(id: string) {
     setProgress(current => {
-      if (lessonStatus(current, id) === 'locked') return current
       const next = { ...current, [id]: nextStatus(toStatus(current, id)) }
       window.localStorage.setItem(storageKey, JSON.stringify(next))
       return next
@@ -90,8 +87,8 @@ export function CurriculumTracker() {
                 <p className="curriculum-meta">{lesson.estimatedMinutes} min · {lesson.prerequisites.length ? `builds on ${lesson.prerequisites.map(id => curriculum.find(item => item.id === id)?.title).join(', ')}` : 'starting point'}</p>
                 <div className="curriculum-actions">
                   <Link className="solid-btn" to="/units/$unitId" params={{ unitId: lesson.id }}>Open unit</Link>
-                  {status !== 'locked' && lesson.practice?.map(link => <Link className="solid-btn" key={link.path + (link.hash ?? '')} to={link.path} hash={link.hash}>{link.label}</Link>)}
-                  <button className="ghost-btn" type="button" disabled={status === 'locked'} onClick={() => update(lesson.id)}>{status === 'locked' ? 'Complete previous unit' : status === 'mastered' ? 'Mark available again' : status === 'available' ? 'Start unit' : 'Mark mastered'}</button>
+                  {lesson.practice?.map(link => <Link className="solid-btn" key={link.path + (link.hash ?? '')} to={link.path} hash={link.hash}>{link.label}</Link>)}
+                  <button className="ghost-btn" type="button" onClick={() => update(lesson.id)}>{status === 'mastered' ? 'Mark available again' : status === 'available' ? 'Start unit' : 'Mark mastered'}</button>
                 </div>
               </div>
             </article>
