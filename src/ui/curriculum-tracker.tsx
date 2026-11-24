@@ -51,11 +51,6 @@ export function CurriculumTracker() {
     })
   }
 
-  function reset() {
-    window.localStorage.removeItem(storageKey)
-    setProgress({})
-  }
-
   return (
     <main>
       <header className="hero">
@@ -65,17 +60,8 @@ export function CurriculumTracker() {
         <div className="meta-row"><span>{curriculum.length} units</span><span>{mastered} mastered</span><span>{percentage}% complete</span></div>
       </header>
 
-      <section className="block" aria-labelledby="progress-heading">
-        <div className="sec-head"><span className="num">00</span><h2 id="progress-heading">Your progress <span className="jp">進み具合</span></h2></div>
-        <article className="card curriculum-summary">
-          <progress className="curriculum-progress" value={mastered} max={curriculum.length}>{percentage}%</progress>
-          <p><b>{mastered} of {curriculum.length}</b> units are mastered. Your progress stays in this browser.</p>
-          <button className="ghost-btn" type="button" onClick={reset}>Reset learning record</button>
-        </article>
-      </section>
-
       <section className="block" aria-labelledby="path-heading">
-        <div className="sec-head"><span className="num">01</span><h2 id="path-heading">Learning path <span className="jp">学習の道</span></h2></div>
+        <div className="sec-head"><span className="num">00</span><h2 id="path-heading">Learning path <span className="jp">学習の道</span></h2></div>
         <div className="curriculum-list">
           {curriculum.map(lesson => {
             const status = lessonStatus(progress, lesson.id)
@@ -97,7 +83,7 @@ export function CurriculumTracker() {
       </section>
 
       <section className="block" aria-labelledby="method-heading">
-        <div className="sec-head"><span className="num">02</span><h2 id="method-heading">Lesson standard <span className="jp">設計</span></h2></div>
+        <div className="sec-head"><span className="num">01</span><h2 id="method-heading">Lesson standard <span className="jp">設計</span></h2></div>
         <article className="card curriculum-standard">
           <p>Each future lesson should include: a Can-do and context, a short model input, noticing of key language, retrieval practice with feedback, and a small spoken or written output task.</p>
           <ul>{curriculumPrinciples.map(principle => <li key={principle}>{principle}</li>)}</ul>

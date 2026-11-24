@@ -13,7 +13,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   }, [showEnglish, showFurigana])
 
   const links = [
-    ['/', 'テスト'], ['/curriculum', 'コース'], ['/kana', 'かな'], ['/particles', '助詞'], ['/grammar', '文法'], ['/kanji', '漢字'], ['/vocab', '語彙'], ['/quiz', '実力テスト'], ['/story', '物語'],
+    ['/', 'テスト'], ['/curriculum', 'コース'], ['/grammar', '文法'], ['/kanji', '漢字'], ['/vocab', '語彙'], ['/story', '物語'],
   ] as const
 
   return (
