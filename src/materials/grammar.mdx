@@ -1,0 +1,473 @@
+
+<main>
+  <header className="hero">
+    <span className="eyebrow"><ruby>日本語<rt>にほんご</rt></ruby> · JLPT N5</span>
+    <h1>文法を組み立てる</h1>
+    <p>Particles label the blocks; grammar decides their shape. This page walks from the ます-form and て-form through plain forms, requests and rules, comparisons, existence, counters, and the small words that finish a sentence.</p>
+    <div className="meta-row">
+      <span>12 sections</span>
+      <span>17 practice</span>
+      <span>35 min</span>
+    </div>
+  </header>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">00</span>
+      <h2>The machine <span className="jp">文の形</span></h2>
+    </div>
+    <article className="card p-card">
+      <div className="p-head">
+        <div className="p-glyph wide">です</div>
+        <div>
+          <h3 className="p-name">Predicate last in a basic clause</h3>
+          <p className="p-job">です for nouns and な-adjectives, ます for verbs</p>
+        </div>
+      </div>
+      <div className="contrast contrast-plain">
+        <div className="c-row">
+          <p className="c-line"><ruby>私<rt>わたし</rt></ruby>は・<ruby>毎日<rt>まいにち</rt></ruby>・<ruby>日本語<rt>にほんご</rt></ruby>を・ <span className="pt"><ruby>勉強<rt>べんきょう</rt></ruby>します</span>。</p>
+          <p className="c-note">I study Japanese every day. — the verb closes the sentence.</p>
+        </div>
+        <div className="c-row">
+          <p className="c-line"><ruby>私<rt>わたし</rt></ruby>は・<ruby>学生<rt>がくせい</rt></ruby>・ <span className="pt">です</span>。</p>
+          <p className="c-note">I'm a student. — nouns use です, no verb needed.</p>
+        </div>
+      </div>
+      <p className="p-trap"><b>Trap</b> English puts the verb in the middle. Japanese normally puts the predicate at the end of a basic clause. Everything before the final verb is scenery — which is why the blocks can be reordered and the sentence still works.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">01</span>
+      <h2>Verbs <span className="jp">ます形</span></h2>
+    </div>
+    <article className="card p-card" id="verbs">
+      <div className="p-head">
+        <div className="p-glyph wide">ます</div>
+        <div>
+          <h3 className="p-name">The four polite forms</h3>
+          <p className="p-job">One table covers most of N5</p>
+        </div>
+      </div>
+      <div className="tbl-wrap">
+        <table className="tbl">
+          <thead><tr><th></th><th>Present / future</th><th>Past</th></tr></thead>
+          <tbody>
+            <tr><td>Affirmative</td><td className="jp"><ruby>食<rt>た</rt></ruby>べます</td><td className="jp"><ruby>食<rt>た</rt></ruby>べました</td></tr>
+            <tr><td>Negative</td><td className="jp"><ruby>食<rt>た</rt></ruby>べません</td><td className="jp"><ruby>食<rt>た</rt></ruby>べませんでした</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="rules rules-spaced">
+        <div className="rule"><span className="rule-k">Group 2 (る)</span><span className="rule-v">食べる → 食べます <i>drop る, add ます</i></span></div>
+        <div className="rule"><span className="rule-k">Group 1 (う)</span><span className="rule-v">行く → 行きます <i>u → i + ます</i></span></div>
+        <div className="rule"><span className="rule-k">Group 3</span><span className="rule-v">する → します・来る → <ruby>来<rt>き</rt></ruby>ます <i>memorise these two</i></span></div>
+      </div>
+      <div className="ex ex-spaced">
+        <p className="jp"><ruby>昨日<rt>きのう</rt></ruby> <ruby>雨<rt>あめ</rt></ruby>が <span className="pt">ふりました</span>。<ruby>今日<rt>きょう</rt></ruby>は <span className="pt">ふりません</span>。</p>
+        <p className="en">It rained yesterday. It didn't rain today. <i>(The pair from the test.)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> Japanese has no separate future tense — <span className="ok"><ruby>明日<rt>あした</rt></ruby>行きます</span> means “I'll go tomorrow”. Context decides. And the negative past is one block: <span className="ok">○ 行きませんでした</span> is right, <span className="no">× 行くありませんでした</span> is not.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">02</span>
+      <h2>The て-form <span className="jp">て形</span></h2>
+    </div>
+    <article className="card p-card" id="te-form">
+      <div className="p-head">
+        <div className="p-glyph wide">て</div>
+        <div>
+          <h3 className="p-name">One form, four jobs</h3>
+          <p className="p-job">The single most useful shape in Japanese</p>
+        </div>
+      </div>
+
+      <div className="rules">
+        <div className="rule"><span className="rule-k">Group 2 る-verb</span><span className="rule-v"><ruby>食<rt>た</rt></ruby>べる → 食べ<span className="pt">て</span></span></div>
+        <div className="rule"><span className="rule-k">Group 1 う・つ・る</span><span className="rule-v"><ruby>買<rt>か</rt></ruby>う → 買<span className="pt">って</span> ・<ruby>待<rt>ま</rt></ruby>つ → 待<span className="pt">って</span> ・<ruby>帰<rt>かえ</rt></ruby>る → 帰<span className="pt">って</span></span></div>
+        <div className="rule"><span className="rule-k">む・ぶ・ぬ</span><span className="rule-v"><ruby>飲<rt>の</rt></ruby>む → 飲<span className="pt">んで</span> ・<ruby>遊<rt>あそ</rt></ruby>ぶ → 遊<span className="pt">んで</span></span></div>
+        <div className="rule"><span className="rule-k">く</span><span className="rule-v"><ruby>書<rt>か</rt></ruby>く → 書<span className="pt">いて</span></span></div>
+        <div className="rule"><span className="rule-k">す</span><span className="rule-v"><ruby>話<rt>はな</rt></ruby>す → 話<span className="pt">して</span></span></div>
+        <div className="rule"><span className="rule-k">the two odd ones</span><span className="rule-v">する → して・来る → <ruby>来<rt>き</rt></ruby>て</span></div>
+      </div>
+
+      <div className="ex ex-more-spaced">
+        <p className="jp">ちょっと<ruby>待<rt>ま</rt></ruby><span className="pt">って</span> ください。</p>
+        <p className="en">Please wait a moment. <i>(〜てください = please do.)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>今<rt>いま</rt></ruby>ごはんを<ruby>食<rt>た</rt></ruby>べ<span className="pt">て</span> います。</p>
+        <p className="en">I'm eating right now. <i>(〜ています = in the middle of, or an ongoing state.)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>朝<rt>あさ</rt></ruby> <ruby>起<rt>お</rt></ruby>き<span className="pt">て</span>、かおをあら<span className="pt">って</span>、ごはんを食べます。</p>
+        <p className="en">I get up, wash my face, and eat. <i>(Sequence: て links the steps.)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp">ここに<ruby>座<rt>すわ</rt></ruby><span className="pt">って</span>もいいですか。</p>
+        <p className="en">May I sit here? <i>(〜てもいいですか = permission.)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> 行く is the common exception to the く rule: <span className="ok">○ 行って</span>, not <span className="no">× 行いて</span>.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">03</span>
+      <h2>Adjectives <span className="jp">いとな</span></h2>
+    </div>
+    <article className="card p-card" id="adjectives">
+      <div className="p-head">
+        <div className="p-glyph wide">い/な</div>
+        <div>
+          <h3 className="p-name">Two families, two conjugations</h3>
+          <p className="p-job">い-adjectives change their tail; な-adjectives behave like nouns</p>
+        </div>
+      </div>
+      <div className="tbl-wrap">
+        <table className="tbl">
+          <thead><tr><th></th><th>い-adj · <ruby>高<rt>たか</rt></ruby>い</th><th>な-adj · <ruby>静<rt>しず</rt></ruby>か</th></tr></thead>
+          <tbody>
+            <tr><td>Present</td><td className="jp"><ruby>高<rt>たか</rt></ruby>いです</td><td className="jp"><ruby>静<rt>しず</rt></ruby>かです</td></tr>
+            <tr><td>Negative</td><td className="jp"><ruby>高<rt>たか</rt></ruby><span className="pt">くない</span>です</td><td className="jp"><ruby>静<rt>しず</rt></ruby>か<span className="pt">じゃない</span>です</td></tr>
+            <tr><td>Past</td><td className="jp"><ruby>高<rt>たか</rt></ruby><span className="pt">かった</span>です</td><td className="jp"><ruby>静<rt>しず</rt></ruby>か<span className="pt">でした</span></td></tr>
+            <tr><td>Past negative</td><td className="jp"><ruby>高<rt>たか</rt></ruby><span className="pt">くなかった</span>です</td><td className="jp"><ruby>静<rt>しず</rt></ruby>か<span className="pt">じゃなかった</span>です</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="ex ex-spaced">
+        <p className="jp"><ruby>空<rt>そら</rt></ruby>が<ruby>青<rt>あお</rt></ruby><span className="pt">くて</span>、きれいでした。</p>
+        <p className="en">The sky was blue and pretty. <i>(くて links adjectives — the line from the story.)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> きれい ends in い but is a <b>な</b>-adjective: <span className="ok">○ きれいな<ruby>町<rt>まち</rt></ruby></span>, <span className="no">× きれいの<ruby>町<rt>まち</rt></ruby></span>. And before です the い-adjective stays plain: <span className="ok">○ <ruby>高<rt>たか</rt></ruby>いです</span>, <span className="no">× <ruby>高<rt>たか</rt></ruby>くです</span> — that was one of the test questions.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">04</span>
+      <h2>Wants <span className="jp">たい・ましょう</span></h2>
+    </div>
+    <article className="card p-card" id="tai">
+      <div className="p-head">
+        <div className="p-glyph wide">たい</div>
+        <div>
+          <h3 className="p-name">〜たい, 〜ましょう, 〜ませんか</h3>
+          <p className="p-job">What you want, and what you propose</p>
+        </div>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>き<span className="pt">たい</span>です。</p>
+        <p className="en">I want to go to Japan. <i>(ます-stem + たい. 行きます → 行きたい.)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp">いっしょに<ruby>行<rt>い</rt></ruby>き<span className="pt">ましょう</span>。</p>
+        <p className="en">Let's go together.</p>
+      </div>
+      <div className="ex">
+        <p className="jp">いっしょに<ruby>行<rt>い</rt></ruby>き<span className="pt">ませんか</span>。</p>
+        <p className="en">Won't you come with me? <i>(Softer — an invitation, not a decision.)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> たい conjugates like an い-adjective: <span className="ok">行きたくないです</span> = I don't want to go. And it attaches to the ます-stem, never the dictionary form — <span className="no">× 行くたいです</span>.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">05</span>
+      <h2>Linking <span className="jp">から・が</span></h2>
+    </div>
+    <article className="card p-card" id="kara">
+      <div className="p-head">
+        <div className="p-glyph wide">から</div>
+        <div>
+          <h3 className="p-name">Because, but, and then</h3>
+          <p className="p-job">The three connectors that make you sound like a person, not a phrasebook</p>
+        </div>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>暑<rt>あつ</rt></ruby>い<span className="pt">から</span>、まどを<ruby>開<rt>あ</rt></ruby>けます。</p>
+        <p className="en">It's hot, so I'll open the window. <i>(から = because. Both plain and polite forms can come before it; keep the register consistent.)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>高<rt>たか</rt></ruby>いです<span className="pt">が</span>、おいしいです。</p>
+        <p className="en">It's expensive, but delicious. <i>(が = but, inside one sentence.)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp">ごはんを<ruby>食<rt>た</rt></ruby>べました。それから、<ruby>映画<rt>えいが</rt></ruby>を見ました。</p>
+        <p className="en">I ate, and then I watched a film. <i>(それから starts the next sentence.)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> から has two jobs. <span className="ok">九時から</span> = from nine (a starting point, a particle). <span className="ok"><ruby>暑<rt>あつ</rt></ruby>いから</span> = because it's hot (a connector). Same word, different slot.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">06</span>
+      <h2>Plain forms <span className="jp">普通形</span></h2>
+    </div>
+    <article className="card p-card" id="plain-forms">
+      <div className="p-head">
+        <div className="p-glyph wide">普通形</div>
+        <div>
+          <h3 className="p-name">The form behind everything</h3>
+          <p className="p-job">Dictionary, た-form and ない-form</p>
+        </div>
+      </div>
+      <div className="tbl-wrap">
+        <table className="tbl">
+          <thead><tr><th></th><th>Dictionary</th><th>Past (た)</th><th>Negative (ない)</th></tr></thead>
+          <tbody>
+            <tr><td>Group 2</td><td className="jp"><ruby>食<rt>た</rt></ruby>べる</td><td className="jp"><ruby>食<rt>た</rt></ruby>べた</td><td className="jp"><ruby>食<rt>た</rt></ruby>べない</td></tr>
+            <tr><td>Group 1</td><td className="jp"><ruby>行<rt>い</rt></ruby>く</td><td className="jp"><ruby>行<rt>い</rt></ruby>った</td><td className="jp"><ruby>行<rt>い</rt></ruby>かない</td></tr>
+            <tr><td>Group 1</td><td className="jp"><ruby>飲<rt>の</rt></ruby>む</td><td className="jp"><ruby>飲<rt>の</rt></ruby>んだ</td><td className="jp"><ruby>飲<rt>の</rt></ruby>まない</td></tr>
+            <tr><td>Group 3</td><td className="jp">する</td><td className="jp">した</td><td className="jp">しない</td></tr>
+            <tr><td>Group 3</td><td className="jp"><ruby>来<rt>く</rt></ruby>る</td><td className="jp"><ruby>来<rt>き</rt></ruby>た</td><td className="jp"><ruby>来<rt>こ</rt></ruby>ない</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="rules rules-spaced">
+        <div className="rule"><span className="rule-k">Group 2 る-verb</span><span className="rule-v">drop る: <ruby>食<rt>た</rt></ruby>べる → <ruby>食<rt>た</rt></ruby>べた・<ruby>食<rt>た</rt></ruby>べない</span></div>
+        <div className="rule"><span className="rule-k">う・つ・る</span><span className="rule-v"><ruby>買<rt>か</rt></ruby>う → <ruby>買<rt>か</rt></ruby>った・<ruby>買<rt>か</rt></ruby>わない · <ruby>待<rt>ま</rt></ruby>つ → <ruby>待<rt>ま</rt></ruby>った・<ruby>待<rt>ま</rt></ruby>たない</span></div>
+        <div className="rule"><span className="rule-k">む・ぶ・ぬ</span><span className="rule-v"><ruby>飲<rt>の</rt></ruby>む → <ruby>飲<rt>の</rt></ruby>んだ・<ruby>飲<rt>の</rt></ruby>まない</span></div>
+        <div className="rule"><span className="rule-k">く・ぐ・す</span><span className="rule-v"><ruby>書<rt>か</rt></ruby>く → <ruby>書<rt>か</rt></ruby>いた・<ruby>書<rt>か</rt></ruby>かない · <ruby>話<rt>はな</rt></ruby>す → <ruby>話<rt>はな</rt></ruby>した・<ruby>話<rt>はな</rt></ruby>さない</span></div>
+      </div>
+      <p className="p-trap"><b>Trap</b> The ない-form of an う-verb uses the <b>a</b> row: <ruby>買<rt>か</rt></ruby>う → <ruby>買<rt>か</rt></ruby>わない (not 買あない). And <ruby>行<rt>い</rt></ruby>く keeps its exception: <ruby>行<rt>い</rt></ruby>った, not 行いた.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">07</span>
+      <h2>Requests and rules <span className="jp">おねがいとルール</span></h2>
+    </div>
+    <article className="card p-card" id="requests">
+      <div className="p-head">
+        <div className="p-glyph wide">ない形</div>
+        <div>
+          <h3 className="p-name">Please don't, must, don't have to</h3>
+          <p className="p-job">Built on the ない-form and the て-form</p>
+        </div>
+      </div>
+      <div className="ex">
+        <p className="jp">ここで<ruby>写真<rt>しゃしん</rt></ruby>をとら<span className="pt">ないで</span>ください。</p>
+        <p className="en">Please don't take photos here. <i>(ない-form + でください)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>毎日<rt>まいにち</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>し<span className="pt">なければなりません</span>。</p>
+        <p className="en">I have to study every day. <i>(しない → し + なければなりません)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>明日<rt>あした</rt></ruby>は<ruby>来<rt>こ</rt></ruby><span className="pt">なくてもいい</span>です。</p>
+        <p className="en">You don't have to come tomorrow. <i>(来ない → 来なくてもいい)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp">ここでたばこを<ruby>吸<rt>す</rt></ruby>っ<span className="pt">てはいけません</span>。</p>
+        <p className="en">You must not smoke here. <i>(て-form + はいけません)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>食<rt>た</rt></ruby>べ<span className="pt">てから</span>、<ruby>出<rt>で</rt></ruby>かけます。</p>
+        <p className="en">After eating, I go out. <i>(て-form + から = after doing)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> なければなりません means <b>must</b>; なくてもいいです means <b>don't have to</b>. They are opposites. てはいけません is <b>must not</b> — stronger than ないでください.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">08</span>
+      <h2>Comparisons <span className="jp">くらべる</span></h2>
+    </div>
+    <article className="card p-card" id="comparisons">
+      <div className="p-head">
+        <div className="p-glyph wide">より</div>
+        <div>
+          <h3 className="p-name">More than, which one, the most</h3>
+          <p className="p-job">より・のほうが・一番</p>
+        </div>
+      </div>
+      <div className="ex">
+        <p className="jp">このかばんは あのかばん<span className="pt">より</span> <ruby>高<rt>たか</rt></ruby>いです。</p>
+        <p className="en">This bag is more expensive than that one. <i>(A は B より + adjective)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp">あのかばん<span className="pt">より</span> このかばん<span className="pt">のほうが</span> <ruby>高<rt>たか</rt></ruby>いです。</p>
+        <p className="en">This bag is the more expensive one. <i>(B より A のほうが + adjective)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp">コーヒーと こうちゃと <span className="pt">どちらが</span> いいですか。</p>
+        <p className="en">Which do you prefer, coffee or tea? <i>(A と B と どちらが)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp">クラスで <span className="pt">一番</span> <ruby>背<rt>せ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>いです。</p>
+        <p className="en">He is the tallest in the class. <i>(一番 = the most)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> より marks the thing you compare <b>against</b>, not the topic. このかばんは あのかばんより高い = this bag is pricier <b>than</b> that one.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">09</span>
+      <h2>Existence and pointing <span className="jp">あります・これ</span></h2>
+    </div>
+    <article className="card p-card" id="existence">
+      <div className="p-head">
+        <div className="p-glyph wide">あります</div>
+        <div>
+          <h3 className="p-name">There is, and this / that</h3>
+          <p className="p-job">あります vs います, and the こ・そ・あ series</p>
+        </div>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>が<span className="pt">あります</span>。</p>
+        <p className="en">There is a book on the desk. <i>(things → あります)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>公園<rt>こうえん</rt></ruby>に<ruby>子<rt>こ</rt></ruby>どもが<span className="pt">います</span>。</p>
+        <p className="en">There are children in the park. <i>(people and animals → います)</i></p>
+      </div>
+      <div className="tbl-wrap">
+        <table className="tbl">
+          <thead><tr><th></th><th>near me</th><th>near you</th><th>over there</th><th>which?</th></tr></thead>
+          <tbody>
+            <tr><td>thing</td><td className="jp">これ</td><td className="jp">それ</td><td className="jp">あれ</td><td className="jp">どれ</td></tr>
+            <tr><td>+ noun</td><td className="jp">この<ruby>本<rt>ほん</rt></ruby></td><td className="jp">その<ruby>本<rt>ほん</rt></ruby></td><td className="jp">あの<ruby>本<rt>ほん</rt></ruby></td><td className="jp">どの<ruby>本<rt>ほん</rt></ruby></td></tr>
+            <tr><td>place</td><td className="jp">ここ</td><td className="jp">そこ</td><td className="jp">あそこ</td><td className="jp">どこ</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="p-trap"><b>Trap</b> これ stands alone; この needs a noun: <span className="ok">○ この本</span>, <span className="no">× これ本</span>. And a person is never あります — use います.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">10</span>
+      <h2>Counters <span className="jp">かぞえ方</span></h2>
+    </div>
+    <article className="card p-card" id="counters">
+      <div className="p-head">
+        <div className="p-glyph wide">〜つ</div>
+        <div>
+          <h3 className="p-name">Counting depends on the thing</h3>
+          <p className="p-job">The counter changes with what you count</p>
+        </div>
+      </div>
+      <div className="tbl-wrap">
+        <table className="tbl">
+          <thead><tr><th>Counter</th><th>For</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td className="jp">〜つ</td><td>general things (1–10)</td><td className="jp">ひとつ・ふたつ・みっつ</td></tr>
+            <tr><td className="jp">〜人</td><td>people</td><td className="jp">ひとり・ふたり・さんにん</td></tr>
+            <tr><td className="jp">〜枚</td><td>flat things</td><td className="jp">いちまい・にまい</td></tr>
+            <tr><td className="jp">〜冊</td><td>books</td><td className="jp">いっさつ・にさつ</td></tr>
+            <tr><td className="jp">〜台</td><td>machines, cars</td><td className="jp">いちだい・にだい</td></tr>
+            <tr><td className="jp">〜回</td><td>times</td><td className="jp">いっかい・にかい</td></tr>
+            <tr><td className="jp">〜歳</td><td>age</td><td className="jp">いっさい・にさい・はたち (20)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="ex ex-spaced">
+        <p className="jp"><ruby>本<rt>ほん</rt></ruby>を 二<span className="pt">冊</span> <ruby>買<rt>か</rt></ruby>いました。</p>
+        <p className="en">I bought two books. <i>(books → 冊)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> Sounds change: 一冊 is <b>いっさつ</b>, 一回 is <b>いっかい</b>, 六本 is <b>ろっぽん</b>. And people are irregular for one and two: ひとり, ふたり.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">11</span>
+      <h2>Small words <span className="jp">ね・よ・前に</span></h2>
+    </div>
+    <article className="card p-card" id="small-words">
+      <div className="p-head">
+        <div className="p-glyph wide">ね・よ</div>
+        <div>
+          <h3 className="p-name">The words that finish the sentence</h3>
+          <p className="p-job">ね, よ, 前に, 時, ましょうか, ほしい, なる, たり</p>
+        </div>
+      </div>
+      <div className="ex">
+        <p className="jp">いい<ruby>天気<rt>てんき</rt></ruby>です<span className="pt">ね</span>。</p>
+        <p className="en">Nice weather, isn't it? <i>(ね invites agreement)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>明日<rt>あした</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>です<span className="pt">よ</span>。</p>
+        <p className="en">It'll rain tomorrow, you know. <i>(よ gives new information)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>寝<rt>ね</rt></ruby>る<span className="pt">前に</span>、<ruby>歯<rt>は</rt></ruby>をみがきます。</p>
+        <p className="en">I brush my teeth before bed. <i>(dictionary form + 前に)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>子<rt>こ</rt></ruby>どもの<span className="pt">時</span>、<ruby>大阪<rt>おおさか</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいました。</p>
+        <p className="en">When I was a child, I lived in Osaka. <i>(noun + の + 時)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>手伝<rt>てつだ</rt></ruby>い<span className="pt">ましょうか</span>。</p>
+        <p className="en">Shall I help you? <i>(ましょうか offers to do something)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>新<rt>あたら</rt></ruby>しい<ruby>車<rt>くるま</rt></ruby><span className="pt">がほしい</span>です。</p>
+        <p className="en">I want a new car. <i>(ほしい takes が and a thing)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>寒<rt>さむ</rt></ruby><span className="pt">くなりました</span>。</p>
+        <p className="en">It has become cold. <i>(い → く + なる; な-adjective and noun take になる: 静かになる, 学生になる)</i></p>
+      </div>
+      <div className="ex">
+        <p className="jp"><ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>ん<span className="pt">だり</span>、<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>い<span className="pt">たり</span>します。</p>
+        <p className="en">On Sundays I read books, listen to music, and so on. <i>(た-form + り … たりします)</i></p>
+      </div>
+      <p className="p-trap"><b>Trap</b> ほしい is for things you want to <b>have</b>; for actions use the ます-stem + たい: <span className="ok">車がほしい</span> vs <span className="ok">車を買いたい</span>.</p>
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">12</span>
+      <h2>Check yourself <span className="jp">練習</span></h2>
+    </div>
+    <div className="practice-intro">
+      Same rules as the particle page: pick an answer, get the reason immediately.
+    </div>
+    <GrammarPractice />
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">13</span>
+      <h2>After N5 <span className="jp">次は N4</span></h2>
+    </div>
+    <article className="card next-card">
+      <div className="glyph">N4</div>
+      <div className="next-body">
+        <h3>What opens up next</h3>
+        <p>Once て-form is automatic, N4 is mostly more ways to attach to it:</p>
+        <ul>
+          <li>〜たことがある — “I have done…”</li>
+          <li>〜ながら — doing two things at once</li>
+          <li>〜たら / 〜ば — if / when</li>
+          <li>plain form — the casual register everything else builds on</li>
+        </ul>
+        <a className="solid-btn" href="/">Retake the level check</a>
+        <a className="solid-btn adjacent-action" href="/particles">Review particles</a>
+        <a className="solid-btn adjacent-action" href="/quiz">実力テスト ２</a>
+        <a className="solid-btn adjacent-action" href="/vocab">Vocabulary</a>
+      </div>
+    </article>
+  </section>
+
+  <p className="footer-note">
+    Examples use N5 vocabulary only. ふりがな can be switched off in the top bar.<br/>
+    Particles first, grammar second — that's the order this site teaches in.
+  </p>
+</main>
+

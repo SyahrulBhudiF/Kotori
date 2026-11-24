@@ -1,0 +1,190 @@
+/* Shared design system for the N5 study pages. */
+:root{--paper:#faf7f2;--card:#fffdfa;--ink:#1d1a16;--muted:#6f6860;--faint:#9a928a;--line:#e7ded2;--line-soft:#f0e9df;--accent:#c4432b;--accent-ink:#a5351f;--accent-soft:#f8e7e2;--green:#2e7d52;--green-soft:#e6f2ea;--red:#b23a2b;--red-soft:#f9e5e2;--amber:#c08a34;--shadow:0 1px 2px rgba(29,26,22,.04),0 8px 24px -12px rgba(29,26,22,.16);--jp:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP","Noto Sans CJK JP","Source Han Sans JP",Meiryo,sans-serif;--ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif}
+:where(*,*::before,*::after){box-sizing:border-box}
+:where(html){scroll-behavior:smooth}
+:where(body){margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--ui);-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 15% 0%,#fff9f0 0%,transparent 45%),radial-gradient(circle at 90% 10%,#fdf2ec 0%,transparent 35%);background-attachment:fixed}
+:where(button,input,textarea,select){font:inherit}
+:where(button){color:inherit}
+:where(img,svg,video,canvas){max-width:100%;height:auto}
+:where(a){color:inherit}
+:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 45%,transparent);outline-offset:2px}
+::selection{background:var(--accent-soft);color:var(--ink)}
+
+:root{
+  --paper:#faf7f2;
+  --card:#fffdfa;
+  --ink:#1d1a16;
+  --muted:#6f6860;
+  --faint:#9a928a;
+  --line:#e7ded2;
+  --line-soft:#f0e9df;
+  --accent:#c4432b;
+  --accent-ink:#a5351f;
+  --accent-soft:#f8e7e2;
+  --green:#2e7d52;
+  --green-soft:#e6f2ea;
+  --red:#b23a2b;
+  --red-soft:#f9e5e2;
+  --amber:#c08a34;
+  --shadow:0 1px 2px rgba(29,26,22,.04), 0 8px 24px -12px rgba(29,26,22,.16);
+  --jp:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP","Noto Sans CJK JP","Source Han Sans JP",Meiryo,sans-serif;
+  --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--ui);
+  font-size:16px;
+  line-height:1.6;
+  word-spacing:0;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 15% 0%, #fff9f0 0%, transparent 45%),radial-gradient(circle at 90% 10%, #fdf2ec 0%, transparent 35%);
+  background-attachment:fixed;
+}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky; top:0; z-index:40;
+  backdrop-filter:blur(12px) saturate(140%);
+  -webkit-backdrop-filter:blur(12px) saturate(140%);
+  background:rgba(250,247,242,.86);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  max-width:1040px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; gap:10px;
+}
+.brand{
+  display:flex; align-items:baseline; gap:9px; min-width:0;
+  text-decoration:none; color:inherit;
+}
+.brand-mark{
+  font-family:var(--jp); font-size:20px; font-weight:700;
+  color:var(--accent); letter-spacing:-.02em; line-height:1;
+}
+.brand-sub{
+  font-size:11.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--faint); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.spacer{flex:1}
+.nav-link{
+  font:inherit; font-size:12.5px; color:var(--muted); text-decoration:none;
+  border:1px solid transparent; border-radius:999px; padding:6px 10px;
+  white-space:nowrap; transition:.15s; background:transparent; cursor:pointer;
+}
+button.nav-link{appearance:none;-webkit-appearance:none}
+.translation-toggle{font-family:var(--ui);font-weight:400;text-transform:none;letter-spacing:0}
+.nav-link:hover{color:var(--accent-ink); background:var(--accent-soft)}
+.nav-link[aria-current="page"]{color:var(--accent-ink); background:var(--accent-soft); font-weight:600}
+.furi-toggle{
+  display:flex; align-items:center; gap:8px; cursor:pointer;
+  font-size:12.5px; color:var(--muted); user-select:none;
+  border:1px solid var(--line); background:var(--card);
+  padding:6px 11px 6px 9px; border-radius:999px; white-space:nowrap;
+  transition:border-color .15s, color .15s;
+}
+.furi-toggle:hover{border-color:#d6cabb; color:var(--ink)}
+.furi-toggle .jp-label{font-family:var(--jp); font-size:13px}
+.switch{
+  width:30px; height:17px; border-radius:999px; background:#d9cfc1;
+  position:relative; transition:background .18s; flex:none;
+}
+.switch::after{
+  content:""; position:absolute; top:2px; left:2px; width:13px; height:13px;
+  border-radius:50%; background:#fff; transition:transform .18s;
+  box-shadow:0 1px 2px rgba(0,0,0,.18);
+}
+.furi-toggle[aria-pressed="true"] .switch{background:var(--accent)}
+.furi-toggle[aria-pressed="true"] .switch::after{transform:translateX(13px)}
+
+/* ---------- layout ---------- */
+main{max-width:760px; margin:0 auto; padding:0 20px 150px}
+.hero{padding:52px 0 30px; text-align:center}
+.hero .eyebrow{
+  display:inline-flex; align-items:center; gap:7px;
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent-ink); background:var(--accent-soft);
+  padding:5px 12px; border-radius:999px; font-weight:600;
+}
+.hero h1{
+  font-family:var(--jp);
+  font-size:clamp(30px,6vw,42px); line-height:1.25; margin:18px 0 10px;
+  letter-spacing:.01em; font-weight:700;
+}
+.hero p{color:var(--muted); margin:0 auto; max-width:46ch; font-size:15px}
+.meta-row{
+  display:flex; justify-content:center; flex-wrap:wrap;
+  margin-top:22px; font-size:12.5px; color:var(--faint);
+}
+.meta-row span + span::before{content:"·"; margin:0 11px; color:#c8bdb0}
+
+section.block{margin:0 0 34px}
+.sec-head{display:flex; align-items:baseline; gap:10px; margin-bottom:14px}
+.sec-head .num{
+  font-family:var(--jp); font-size:11px; font-weight:700; letter-spacing:.08em;
+  color:var(--faint);
+}
+.sec-head h2{
+  font-size:13px; letter-spacing:.13em; text-transform:uppercase;
+  margin:0; color:var(--muted); font-weight:600;
+}
+.sec-head .jp{font-family:var(--jp); letter-spacing:.04em; text-transform:none; font-size:14px; color:var(--ink)}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+}
+
+/* ---------- japanese text ---------- */
+ruby{ruby-align:center}
+rt{
+  font-size:.5em; color:var(--faint); font-weight:400;
+  letter-spacing:0; transition:opacity .2s;
+}
+body.no-furi rt{opacity:0; user-select:none}
+
+/* ---------- buttons ---------- */
+.ghost-btn{
+  font:inherit; font-size:12.5px; color:var(--muted);
+  background:transparent; border:1px solid var(--line); border-radius:8px;
+  padding:7px 12px; cursor:pointer; transition:.15s;
+}
+.ghost-btn:hover{color:var(--accent-ink); border-color:#dcc9bf; background:#fff}
+.solid-btn{
+  font:inherit; font-size:13px; font-weight:600; color:var(--ink);
+  background:#fff; border:1px solid var(--line); border-radius:9px;
+  padding:9px 16px; cursor:pointer; transition:.15s; text-decoration:none;
+  display:inline-block;
+}
+.solid-btn:hover{border-color:#d3c2b1; background:#fdf8f2}
+
+.footer-note{
+  text-align:center; font-size:11.5px; color:var(--faint);
+  padding:26px 0 0; line-height:1.7;
+}
+
+@media(max-width:1040px){
+  .topbar-inner{overflow-x:auto;scrollbar-width:none;gap:8px;padding:9px 12px}
+  .topbar-inner::-webkit-scrollbar{display:none}
+  .topbar-inner .spacer{flex:0 0 4px}
+  .nav-link{padding:6px 8px}
+  .translation-toggle{padding:6px 9px}
+}
+@media(max-width:560px){
+  .hero{padding:36px 0 24px}
+  .topbar-inner{padding:10px 14px}
+  .brand-sub{display:none}
+  .brand-mark{white-space:nowrap;font-size:18px}
+  .nav-link{font-size:12px}
+}
+/* Japanese is written continuously; normalize accidental authoring spaces in Japanese runs. */
+:lang(ja),.jp,.story-body,.story-text{word-spacing:0}
+.jp ruby,.story-body ruby,.story-text ruby{margin-inline:0}
+
+/* Anchored lesson sections clear the sticky top bar. */
+section[id]{scroll-margin-top:84px}

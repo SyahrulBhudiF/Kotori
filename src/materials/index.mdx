@@ -1,0 +1,102 @@
+
+<main>
+  <header className="hero">
+    <span className="eyebrow"><ruby>日本語<rt>にほんご</rt></ruby> · JLPT N5</span>
+    <h1><ruby>私<rt>わたし</rt></ruby>の<ruby>日曜日<rt>にちようび</rt></ruby></h1>
+    <p>Read a short N5 story, then answer 20 questions. At the end you get a score and a straight answer about where you actually are.</p>
+    <div className="meta-row">
+      <span>約330字</span>
+      <span>6 min read</span>
+      <span>20 questions</span>
+    </div>
+  </header>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">01</span>
+      <h2>Reading <span className="jp">物語</span></h2>
+    </div>
+    <article className="card story">
+      <h2 className="story-title"><ruby>私<rt>わたし</rt></ruby>の<ruby>日曜日<rt>にちようび</rt></ruby></h2>
+      <p className="story-sub">My Sunday · マイ (Mai)</p>
+
+      <div className="story-body" id="storyBody">
+        <p><ruby>私<rt>わたし</rt></ruby>はマイです。インドネシアから<ruby>来<rt>き</rt></ruby>ました。<ruby>今<rt>いま</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>しています。</p>
+
+        <p><ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>学校<rt>がっこう</rt></ruby>がありません。ですから、<ruby>日曜日<rt>にちようび</rt></ruby>によく<ruby>友だち<rt>ともだち</rt></ruby>と<ruby>出<rt>で</rt></ruby>かけます。</p>
+
+        <p><ruby>先週<rt>せんしゅう</rt></ruby>の<ruby>日曜日<rt>にちようび</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>はアニさんと<ruby>上野<rt>うえの</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。<ruby>上野<rt>うえの</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>にあります。<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>三十分<rt>さんじゅっぷん</rt></ruby>ぐらいかかりました。</p>
+
+        <p><ruby>駅<rt>えき</rt></ruby>でアニさんに<ruby>会<rt>あ</rt></ruby>いました。それから、<ruby>二人<rt>ふたり</rt></ruby>で<ruby>公園<rt>こうえん</rt></ruby>をさんぽしました。<ruby>公園<rt>こうえん</rt></ruby>はとてもきれいでした。<ruby>空<rt>そら</rt></ruby>が<ruby>青<rt>あお</rt></ruby>くて、<ruby>木<rt>き</rt></ruby>がたくさんありました。</p>
+
+        <p><ruby>十二時<rt>じゅうにじ</rt></ruby>にレストランで<ruby>昼<rt>ひる</rt></ruby>ごはんを<ruby>食<rt>た</rt></ruby>べました。<ruby>私<rt>わたし</rt></ruby>は<ruby>天<rt>てん</rt></ruby>ぷらを<ruby>食<rt>た</rt></ruby>べました。アニさんはラーメンを<ruby>食<rt>た</rt></ruby>べました。<ruby>天<rt>てん</rt></ruby>ぷらは<ruby>千二百円<rt>せんにひゃくえん</rt></ruby>でした。<ruby>少<rt>すこ</rt></ruby>し<ruby>高<rt>たか</rt></ruby>かったですが、とてもおいしかったです。</p>
+
+        <p>それから、デパートへ<ruby>行<rt>い</rt></ruby>きました。デパートで<ruby>私<rt>わたし</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいかばんを<ruby>買<rt>か</rt></ruby>いました。<ruby>三千円<rt>さんぜんえん</rt></ruby>でした。アニさんは<ruby>何<rt>なに</rt></ruby>も<ruby>買<rt>か</rt></ruby>いませんでした。</p>
+
+        <p><ruby>五時<rt>ごじ</rt></ruby>にうちへ<ruby>帰<rt>かえ</rt></ruby>りました。とても<ruby>楽<rt>たの</rt></ruby>しい<ruby>一日<rt>いちにち</rt></ruby>でした。<ruby>来月<rt>らいげつ</rt></ruby>、また<ruby>行<rt>い</rt></ruby>きたいです。</p>
+      </div>
+
+      <StoryPanels />
+    </article>
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">02</span>
+      <h2>Comprehension <span className="jp">読解</span></h2>
+    </div>
+    <LevelQuestions section="reading" />
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">03</span>
+      <h2>Kanji reading <span className="jp">漢字</span></h2>
+    </div>
+    <LevelQuestions section="kanji" />
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">04</span>
+      <h2>Particles <span className="jp">助詞</span></h2>
+    </div>
+    <LevelQuestions section="particles" />
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">05</span>
+      <h2>Grammar <span className="jp">文法</span></h2>
+    </div>
+    <LevelQuestions section="grammar" />
+  </section>
+
+  <LevelResult />
+
+  <section className="block second-test-section">
+    <div className="sec-head">
+      <span className="num">06</span>
+      <h2>Second test <span className="jp">実力テスト ２</span></h2>
+    </div>
+    <article className="card second-test-card">
+      <div className="second-test-glyph">２</div>
+      <div className="second-test-content">
+        <h3 className="second-test-title">助詞・文法・物語 — 30点</h3>
+        <div className="second-test-description">
+          A harder second test, all in Japanese, with a written section: romaji, meanings, and English → Japanese.
+          It ends with a diagnosis that tells you which part to fix next.
+        </div>
+        <a className="solid-btn" href="/quiz">Start 実力テスト ２</a>
+      </div>
+    </article>
+  </section>
+
+  <div className="footer-note">
+    Story written to N5 grammar and vocabulary (です・ます, て form, から, が, counters, past tense).<br/>
+    Score bands are a rough guide, not an official JLPT result.
+  </div>
+</main>
+
+<LevelDock />
+

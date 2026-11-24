@@ -1,0 +1,59 @@
+
+<main>
+  <header className="hero">
+    <span className="eyebrow"><ruby>日本語<rt>にほんご</rt></ruby> · JLPT N5</span>
+    <h1>実力テスト ２</h1>
+    <p>ぜんぶ<ruby>日本語<rt>にほんご</rt></ruby>です。助詞と文法はえらんでください。物語は書いてください。ぜんぶで 30点、15分ぐらいです。</p>
+    <div className="meta-row">
+      <span>30問</span>
+      <span>書くテストあり</span>
+      <span>15分</span>
+    </div>
+  </header>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">01</span>
+      <h2>助詞 <span className="jp">10問</span></h2>
+    </div>
+    <p className="sec-note jp">＿＿にいちばんいいものをえらんでください。</p>
+    <TestChoices section="particles" />
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">02</span>
+      <h2>文法 <span className="jp">10問</span></h2>
+    </div>
+    <p className="sec-note jp">＿＿にいちばんいいものをえらんでください。</p>
+    <TestChoices section="grammar" />
+  </section>
+
+  <section className="block">
+    <div className="sec-head">
+      <span className="num">03</span>
+      <h2>物語 <span className="jp">10問</span></h2>
+    </div>
+
+    <h3 className="writing-subheading first">A. ローマ字</h3>
+    <p className="sec-note jp">ぶんをローマ字で書いてください。</p>
+    <TestWritten kind="romaji" />
+
+    <h3 className="writing-subheading">B. 意味</h3>
+    <p className="sec-note jp">ことばの意味を<ruby>英語<rt>えいご</rt></ruby>で書いてください。</p>
+    <TestWritten kind="meaning" />
+
+    <h3 className="writing-subheading">C. 英 → 日</h3>
+    <p className="sec-note jp">英語を日本語で書いてください。</p>
+    <TestWritten kind="translate" />
+  </section>
+
+  <TestResult />
+
+  <div className="footer-note">
+    ぜんぶ<ruby>日本語<rt>にほんご</rt></ruby>のテストです。こたえは採点のあとで<ruby>分<rt>わ</rt></ruby>かります。<br/>
+    Score bands are a guide, not an official JLPT result.
+  </div>
+</main>
+
+<TestDock />

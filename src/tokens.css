@@ -1,0 +1,16 @@
+:root {
+  --color-paper: #faf7f2;
+  --color-card: #fffdfa;
+  --color-ink: #1d1a16;
+  --color-muted: #6f6860;
+  --color-faint: #9a928a;
+  --color-line: #e7ded2;
+  --color-line-soft: #f0e9df;
+  --color-accent: #c4432b;
+  --color-accent-ink: #a5351f;
+  --color-accent-soft: #f8e7e2;
+  --color-green: #2e7d52;
+  --color-red: #b23a2b;
+  --font-jp: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", Meiryo, sans-serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+}

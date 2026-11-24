@@ -1,0 +1,191 @@
+/* Lesson components shared by the particle and grammar pages. */
+.idea-card{padding:26px 28px}.idea-summary{font-size:14px;color:var(--muted);margin:18px 0 0;line-height:1.7}
+.contrast-plain{padding:0;border:0;box-shadow:none;margin:0}
+.rules-spaced{margin-top:18px}.ex-spaced{margin-top:18px}.ex-more-spaced{margin-top:20px}
+.practice-intro{font-size:13.5px;color:var(--muted);margin:-4px 0 14px}
+.adjacent-action{margin-left:6px}
+/* Japanese text uses Japanese punctuation and no Latin-style inter-word spaces. */
+.jp,.story-text,.story-body{word-spacing:0;letter-spacing:normal}
+.jp ruby + ruby{margin-left:0}
+
+
+/* ---------- concept card ---------- */
+.p-card{padding:22px 24px; margin-bottom:12px; scroll-margin-top:72px}
+.p-head{display:flex; gap:16px; align-items:center; margin-bottom:16px}
+.p-glyph{
+  width:60px; height:60px; display:grid; place-items:center; flex:none;
+  background:var(--accent-soft); color:var(--accent-ink);
+  font-family:var(--jp); font-size:31px; font-weight:700; border-radius:14px;
+  line-height:1; white-space:nowrap;
+}
+.p-glyph.wide{width:auto; min-width:60px; padding:0 14px; font-size:22px}
+.p-name{font-family:var(--jp); font-size:19px; margin:0; font-weight:700}
+.p-romaji{
+  font-family:var(--ui); font-size:10.5px; color:var(--faint);
+  letter-spacing:.1em; text-transform:uppercase; margin-left:7px; font-weight:600;
+}
+.p-job{margin:2px 0 0; font-size:13.5px; color:var(--muted)}
+
+/* ---------- examples ---------- */
+.ex{margin:0 0 13px; padding-left:14px; border-left:2px solid var(--line)}
+.ex:last-of-type{margin-bottom:0}
+.ex .jp{font-family:var(--jp); font-size:17px; line-height:1.95; margin:0; letter-spacing:.01em}
+.ex .en{font-size:12.5px; color:var(--muted); margin:2px 0 0; line-height:1.5}
+body.hide-translation .en,body.hide-translation .translation.open{display:none}
+.story-text .en{display:block; margin-top:5px; line-height:1.65; color:var(--muted)}
+.translation-toggle{flex:none; white-space:nowrap; border:1px solid var(--line); background:transparent; border-radius:8px; padding:7px 10px; color:var(--muted); font:inherit; font-size:12px; cursor:pointer}
+.translation-toggle:hover{border-color:var(--accent); color:var(--accent-ink)}
+.ex .en i{color:var(--faint); font-style:normal}
+.pt{font-style:normal; color:var(--accent-ink); font-weight:700}
+
+/* ---------- trap callout ---------- */
+.p-trap{
+  margin:16px 0 0; padding:11px 14px; font-size:13px; line-height:1.65;
+  background:#fdf6f3; border:1px solid #f0ded6; border-radius:9px; color:#6a4a3f;
+}
+.p-trap > b:first-child{
+  color:var(--accent-ink); font-size:10px; letter-spacing:.1em;
+  text-transform:uppercase; margin-right:7px; vertical-align:1px;
+}
+.p-trap .ok{color:var(--green); font-weight:600}
+.p-trap .no{color:var(--red); font-weight:600}
+
+/* ---------- side-by-side contrast ---------- */
+.contrast{padding:22px 24px; margin-bottom:12px; scroll-margin-top:72px}
+.contrast h3{
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--faint); margin:0 0 14px; font-weight:600;
+}
+.c-row{padding:11px 0; border-bottom:1px dashed var(--line-soft)}
+.c-row:last-child{border-bottom:none; padding-bottom:0}
+.c-row:first-of-type{padding-top:0}
+.c-line{font-family:var(--jp); font-size:16.5px; line-height:1.9; margin:0}
+.c-note{font-size:12.5px; color:var(--muted); margin:2px 0 0}
+
+/* ---------- quick map ---------- */
+.map{padding:6px 22px 10px}
+.map-item{
+  display:flex; gap:14px; align-items:baseline; padding:9px 0;
+  border-bottom:1px solid var(--line-soft); text-decoration:none; color:inherit;
+}
+.map-item:last-child{border-bottom:none}
+.map-item:hover .map-glyph{color:var(--accent)}
+.map-item:hover .map-desc{color:var(--ink)}
+.map-glyph{
+  font-family:var(--jp); font-size:16px; font-weight:700; color:var(--accent-ink);
+  width:42px; flex:none; text-align:center; white-space:nowrap;
+}
+.map-desc{font-size:13px; color:var(--muted); transition:color .15s; line-height:1.5}
+.map-desc b{color:var(--ink); font-weight:600}
+
+/* ---------- conjugation table ---------- */
+.tbl-wrap{margin:16px 0 0; overflow-x:auto}
+.tbl{border-collapse:collapse; width:100%; font-size:13.5px}
+.tbl th{
+  text-align:left; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--faint); font-weight:600; padding:0 12px 7px 0; white-space:nowrap;
+}
+.tbl td{
+  padding:9px 12px 9px 0; border-top:1px solid var(--line-soft);
+  vertical-align:middle;
+}
+.tbl td:first-child{font-size:12px; color:var(--muted); white-space:nowrap}
+.tbl .jp{font-family:var(--jp); font-size:15.5px}
+
+/* ---------- kana chart ---------- */
+.kana-chart th{text-align:center; letter-spacing:0}
+.kana-chart td{text-align:center; padding:7px 4px}
+.kana-chart .kana{display:block; font-family:var(--jp); font-size:21px; line-height:1.3; color:var(--ink)}
+.kana-chart .romaji{display:block; font-family:var(--ui); font-size:10px; letter-spacing:.05em; color:var(--faint)}
+
+/* ---------- conjugation rules ---------- */
+.rules{margin:14px 0 0; display:grid; gap:0}
+.rule{
+  display:flex; gap:14px; align-items:baseline; padding:8px 0;
+  border-top:1px solid var(--line-soft); font-size:13.5px;
+}
+.rule:first-child{border-top:none}
+.rule-k{
+  font-family:var(--jp); color:var(--muted); flex:none; width:96px;
+  font-size:13px; white-space:nowrap;
+}
+.rule-v{font-family:var(--jp); font-size:15px}
+.rule-v i{font-style:normal; color:var(--faint); font-size:12.5px; margin-left:8px; font-family:var(--ui)}
+
+/* ---------- practice ---------- */
+.pq{padding:18px 20px; margin-bottom:10px; transition:border-color .2s}
+.pq-prompt{font-family:var(--jp); font-size:16px; line-height:1.9; margin:0 0 12px; display:flex; gap:10px}
+.prompt-translation{font-family:var(--ui); font-size:12.5px; line-height:1.5; margin:-7px 0 11px 26px; color:var(--muted)}
+.pq-no{
+  font-family:var(--ui); font-size:11.5px; font-weight:700; color:var(--faint);
+  flex:none; padding-top:4px; width:16px; font-variant-numeric:tabular-nums;
+}
+.po-row{display:flex; gap:7px; flex-wrap:wrap; margin-left:26px}
+.po{
+  font:inherit; font-family:var(--jp); font-size:15px; color:#2b2620;
+  background:#fffdfa; border:1px solid var(--line-soft); border-radius:8px;
+  padding:17px 18px 9px; cursor:pointer; transition:.13s; min-width:64px;
+}
+.po rt{line-height:0; font-size:.45em}
+.po:hover:not(.locked){border-color:#d9c8b8; background:#fff}
+.po.locked{cursor:default}
+.po.correct{border-color:#a9d0ba; background:var(--green-soft); color:var(--green); font-weight:700}
+.po.wrong{border-color:#e3b3aa; background:var(--red-soft); color:var(--red); font-weight:700}
+.pq-why{
+  display:none; margin:11px 0 0 26px; font-size:12.5px; line-height:1.65;
+  color:#5d564d; padding-left:11px; border-left:2px solid var(--line);
+}
+.pq-why.show{display:block}
+
+/* ---------- next / callout card ---------- */
+.next-card{padding:24px 26px; display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap}
+.next-card .glyph{
+  font-family:var(--jp); font-size:26px; font-weight:700; color:#c9bdb0;
+  border:1px dashed var(--line); border-radius:12px; width:54px; height:54px;
+  display:grid; place-items:center; flex:none;
+}
+.next-card h3{font-family:var(--jp); font-size:17px; margin:0 0 6px}
+.next-card p{font-size:13.5px; color:var(--muted); margin:0 0 10px; line-height:1.65}
+.next-card ul{margin:0 0 12px; padding-left:17px; font-size:13px; color:#4d463e; line-height:1.75}
+.next-card li::marker{color:var(--faint)}
+.next-body{flex:1; min-width:220px}
+
+@media(max-width:560px){
+  .po-row,.pq-why{margin-left:0}
+  .p-card,.contrast{padding:18px 16px}
+  .p-glyph{width:52px; height:52px; font-size:26px}
+  .p-glyph.wide{font-size:19px; padding:0 11px}
+  .p-name{font-size:17px}
+  .rule{flex-direction:column; gap:2px}
+  .rule-k{width:auto}
+  .tbl{table-layout:fixed; width:100%; font-size:12px}
+  .tbl th{font-size:9px; letter-spacing:.06em; padding:0 6px 6px 0; white-space:normal}
+  .tbl td{padding:8px 6px 8px 0; font-size:11px}
+  .tbl td:first-child{width:62px; font-size:10.5px; white-space:normal}
+  .tbl .jp{font-size:13px; line-height:1.45}
+}
+
+/* ---------- unit lesson pages ---------- */
+.unit-ja{font-family:var(--jp); font-size:16px; color:var(--muted); margin:-8px 0 14px; letter-spacing:.04em}
+.unit-practice{display:flex; gap:9px; flex-wrap:wrap}
+.unit-nav{display:flex; gap:9px; flex-wrap:wrap; justify-content:center}
+
+/* ---------- vocabulary list ---------- */
+.vocab-search{display:flex; gap:12px; align-items:center; margin:0 0 8px}
+.vocab-search input{flex:1; min-width:0; font:inherit; font-size:14px; padding:10px 14px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink)}
+.vocab-search input:focus{outline:2px solid var(--accent-soft); border-color:var(--accent)}
+.vocab-count{font-size:12px; color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums}
+.vocab-card{padding:10px 22px 6px}
+.vocab-table td{padding:7px 12px 7px 0}
+body.hide-translation .vocab-table th:nth-child(3),body.hide-translation .vocab-table td:nth-child(3){display:none}
+@media(max-width:560px){
+  .vocab-table th:first-child,.vocab-table td:first-child{width:48px}
+  .vocab-table th:nth-child(2),.vocab-table td:nth-child(2){width:48%}
+  .vocab-table td{font-size:12px; padding:8px 6px 8px 0}
+}
+.vocab-kana{display:block}
+.vocab-romaji{display:block; font-family:var(--ui); font-size:10.5px; letter-spacing:.04em; color:var(--faint); margin-top:1px}
+.vocab-romaji-toggle{font-size:11.5px; padding:7px 11px; white-space:nowrap}
+.vocab-romaji-toggle[aria-pressed="true"]{border-color:var(--accent); color:var(--accent-ink); background:var(--accent-soft)}
+@media(max-width:560px){.vocab-search{flex-wrap:wrap}.vocab-search input{flex:1 1 100%}.vocab-count{order:3; margin-left:auto}}
+.p-card[id]{scroll-margin-top:120px}
